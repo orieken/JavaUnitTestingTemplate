@@ -1,6 +1,10 @@
 package com.example.project;
 
 public class ElectricHeater implements Heater {
+
+    /**
+     * This is a private boolean variable used to indicate if the heater is on or off.
+     */
     private boolean heating;
 
     /**
@@ -12,7 +16,6 @@ public class ElectricHeater implements Heater {
         System.out.println("Heater is on");
         heating = true;
     }
-
 
     /**
      * This method is used to turn off the heater.
