@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+        "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
+        "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+<module name="Checker">
+    <property name="charset" value="UTF-8"/>
+    <property name="severity" value="warning"/>
+
+    <!-- File Tabulation -->
+    <property name="tabWidth" value="4"/>
+
+    <!-- Whitespace -->
+    <module name="FileTabCharacter">
+        <property name="eachLine" value="true"/>
+    </module>
+
+    <!-- Braces on the same line as method name -->
+    <!-- Miscellaneous -->
+    <module name="TreeWalker">
+        <module name="LeftCurly"/>
+        <!-- Imports -->
+        <module name="AvoidStarImport"/>
+        <module name="CustomImportOrder"/>
+
+        <!-- Naming Conventions -->
+        <module name="LocalVariableName"/>
+        <module name="MemberName"/>
+        <module name="MethodName"/>
+
+        <!-- Javadoc Comments -->
+        <module name="JavadocMethod"/>
+        <module name="JavadocVariable"/>
+        <module name="JavadocType"/>
+
+
+        <!-- Code Structure -->
+        <module name="MethodLength">
+            <property name="max" value="50"/>
+        </module>
+        <module name="ParameterNumber">
+            <property name="max" value="5"/>
+        </module>
+        <module name="CyclomaticComplexity">
+            <property name="max" value="10"/>
+        </module>
+
+        <module name="SuppressWarnings"/>
+        <module name="IllegalToken"/>
+    </module>
+</module>
