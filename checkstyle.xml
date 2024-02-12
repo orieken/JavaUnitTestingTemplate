@@ -5,7 +5,10 @@
 <module name="Checker">
     <property name="charset" value="UTF-8"/>
     <property name="severity" value="warning"/>
-    <property name="max" value="120"/>
+    <module name="LineLength">
+        <property name="max" value="120"/>
+    </module>
+
     <!-- File Tabulation -->
     <property name="tabWidth" value="4"/>
 
